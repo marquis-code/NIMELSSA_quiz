@@ -40,30 +40,22 @@
 					<span class="login100-form-title p-b-26">
 						Welcome
 					</span>
-					
-
+				
 					<div class="wrap-input100 validate-input" data-validate = "Enter matric">
-						<input placeholder="Matric" class="input100"  id="userMatric"  required="required" type="number" name="matric">
-						<span class="focus-input100"></span>
+						<input class="input100" title="Enter matric number"  id="userMatric"  required="required" type="number" name="matric" placeholder="Matric">
+						<!-- <span class="focus-input100"></span> -->
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
 						<span class="btn-show-pass">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
-						<input placeholder="Password" class="input100" id="userPassword"  required="required" maxlength="100" type="password" minlength="8" type="password" name="pass">
-						<span class="focus-input100"></span>
+						<input  class="input100" id="userPassword" type="password"  type="password" name="pass" placeholder="Password">
+						<!-- <span class="focus-input100"></span> -->
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
-					<div class="inputDiv"><b>Hover to view password Instruction.</b>
-						<ul class="input-requirement">
-						  <li>At least 8 characters long(and less than 100 characters)</li>
-						  <li>Contains at least 1 number</li>
-						  <li>Contains at least 1 Lower Case</li>
-						  <li>Contains at least 1 Upper Case</li>
-						  <li>Contains a special character(e.g. @ &)</li>
-						  <li>Confirmed password must match the first one</li>
-					   </ul>
-					  </div>
+					
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>

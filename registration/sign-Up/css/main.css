@@ -291,11 +291,11 @@ iframe {
   background: #fff;
 }
 
+
 .focus-input100::after {
   font-family: Material-Design-Iconic-Font;
   font-size: 22px;
   color: #fff;
-
   content: attr(data-placeholder);
   display: block;
   width: 100%;
@@ -308,6 +308,7 @@ iframe {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+
 }
 
 .input100:focus {
@@ -405,6 +406,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   }
 
 .login100-form-btn {
@@ -425,11 +427,7 @@ iframe {
   height: 50px;
   border-radius: 25px;
 
-  /* background: #9152f8;
-  background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
-  background: -o-linear-gradient(bottom, #7579ff, #b224ef);
-  background: -moz-linear-gradient(bottom, #7579ff, #b224ef);
-  background: linear-gradient(bottom, #7579ff, #b224ef); */
+
   background-color: lightpink;
   position: relative;
   z-index: 1;
@@ -438,6 +436,8 @@ iframe {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+  padding-left: 50%;
+  text-indent: -300%;
   }
 
 .login100-form-btn::before {
@@ -546,20 +546,64 @@ iframe {
     opacity: 1;
   }
 }
-
 .input-requirement{
   display: none;
   font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
-  color:black;
+  color: black;
   font-size: 12px;
-  padding: 5px;
+  padding: 10px;
   font-weight: bolder;
   line-height: 20px;
   list-style-type: none;
 }
 .inputDiv:hover .input-requirement{
   display: block;
-  /* background-color: wheat; */
+}
+
+/* removing number input spinner */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+  -webkit-appearance:none;
+  margin:0;
+}
+
+/*---------------------------------------------*/
+.btn-show-pass {
+  font-size: 15px;
+  color: #999999;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding-right: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.btn-show-pass:hover {
+  color: #6a7dfe;
+  color: -webkit-linear-gradient(left, #21d4fd, #b721ff);
+  color: -o-linear-gradient(left, #21d4fd, #b721ff);
+  color: -moz-linear-gradient(left, #21d4fd, #b721ff);
+  color: linear-gradient(left, #21d4fd, #b721ff);
+}
+
+.btn-show-pass.active {
+  color: #6a7dfe;
+  color: -webkit-linear-gradient(left, #21d4fd, #b721ff);
+  color: -o-linear-gradient(left, #21d4fd, #b721ff);
+  color: -moz-linear-gradient(left, #21d4fd, #b721ff);
+  color: linear-gradient(left, #21d4fd, #b721ff);
 }
 
 
