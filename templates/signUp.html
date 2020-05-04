@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% load static %}
+<head>
+	<title>sign up</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{% static 'sign-Up/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'sign-Up/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'sign-Up/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'sign-Up/fonts/iconic/css/material-design-iconic-font.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'sign-Up/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{% static 'sign-Up/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'sign-Up/vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'sign-Up/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{% static 'sign-Up/vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'sign-Up/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'sign-Up/css/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form  action="{% url 'login' %}" onsubmit=" return signUpValidationCheck();" autocomplete="on">
+					<span class="login100-form-logo">
+						<img alt="NIMELSSA logo" class="login100-form-logo" src="{% static 'sign-In\images\nimelssa.png' %}" height="70px" width="70px" style="border-radius: 8px;">
+						<!-- <i class="zmdi zmdi-landscape"></i> -->
+					</span>
+
+					<span class="login100-form-title p-b-34 p-t-27">
+					 sign up
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter Your Full Name">
+						<input class="input100" type="text" name="username"  required="required" placeholder="Full Name">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter Your Matric">
+						<input class="input100"  id="usersignnup-matric" type="number" name="matric"  required="required" placeholder="Matric">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter Your Password">
+                        <span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+					  <input class="input100" id="password-signup" type="password" name="pass"  required="required" placeholder="Password">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Confirm Your Password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+                        <input class="input100" id="password-signup_confirm" type="password" name="pass"  required="required" placeholder="Confirm Password">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+					<div class="inputDiv"><b>Hover to view password Instruction.</b>
+						<ul class="input-requirement">
+						  <li>At least 8 characters long(and less than 100 characters)</li>
+						  <li>Contains at least 1 number</li>
+						  <li>Contains at least 1 Lower Case</li>
+						  <li>Contains at least 1 Upper Case</li>
+						  <li>Contains a special character(e.g. @ &)</li>
+						  <li>Confirmed password must match the first one</li>
+					   </ul>
+					  </div>
+					<div class="container-login100-form-btn">
+						<input class="login100-form-btn" type="submit" value="Sign up"/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+	
+<!--===============================================================================================-->
+	<script src="{% static 'sign-Up/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'sign-Up/vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'sign-Up/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'sign-Up/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'sign-Up/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'sign-Up/vendor/daterangepicker/moment.min.js' %}"></script>
+	<script src="{% static 'sign-Up/vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'sign-Up/vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'sign-Up/js/main.js' %}"></script>
+
+</body>
+</html>
