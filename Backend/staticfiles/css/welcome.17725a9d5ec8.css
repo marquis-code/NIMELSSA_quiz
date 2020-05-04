@@ -1,0 +1,173 @@
+body{
+    background-image: url("image/2.ee10e86b492b.jpg");
+   background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+    max-width: 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-color: lightblue;
+   }
+  body:hover{
+   opacity: 1;
+    filter: alpha(opacity=100);
+}
+#text{
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        color: white;
+        font-size: larger;
+        font-weight: 600;
+        background-color: rgba(225, 225, 225, 0.3);
+        border-radius: 8px;
+        font-family: sans-serif;
+        text-align: center;
+        line-height: 1;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+       max-width: 80%;
+       max-height: 100%;
+       padding: 50px 10px 30px 0px;
+    }
+    .lead{
+       font-weight: 400; 
+    }
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 150%;
+}
+
+#bottomDesign{
+    border: none;
+    margin-top: 3%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: x-large;
+  }
+  .button{
+   display: inline-block;
+   border-radius: 8px;
+   background-color:#292F33;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 20px;
+   padding: 15px;
+   width: 50%;
+   transition: all 0.5s;
+   cursor: pointer;
+   margin: 5px;
+   outline: none;
+   height:13%;
+ }
+ 
+ .button span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+ }
+ 
+ .button span:after {
+   content: '»';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ 
+ .button:hover span {
+   padding-right: 25px;
+ }
+ 
+ .button:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+
+ /* Alert CSS code start */
+#message{
+    width: 350px;
+    padding: 20px;
+    border: 25px;
+    margin: 25px;
+    margin-right: -20%;
+    position: absolute;
+    right: 35%;
+    background-color:#F0F8FF;
+    border-radius: 8px;
+    box-shadow: 10px 10px black;
+
+  }
+  #message1{
+  text-align: center;
+  font-family: cursive;
+  font-weight: bolder;
+  text-shadow: 0 0 3px pink;
+  }
+  #message2{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .message3{
+  font-family:'Times New Roman', serif;
+  font-size: larger;
+  color: black;
+  }
+  
+  #exit-button {
+    position: absolute;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 15px;
+    width: 130px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    top: 90%;
+    border-radius: 8px;
+  }
+  
+  #exit-button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }                          
+  
+  #exit-button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+  /* Alert CSS Ends */
+    
+      
+    
