@@ -6,22 +6,22 @@
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  src: url("../fonts/poppins/Poppins-Regular.731a28a413d6.ttf"); 
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  src: url("../fonts/poppins/Poppins-Medium.a4e11dda4053.ttf"); 
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  src: url("../fonts/poppins/Poppins-Bold.7940efc40d8e.ttf"); 
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  src: url("../fonts/poppins/Poppins-SemiBold.e63b93dfac26.ttf"); 
 }
 
 
@@ -162,7 +162,7 @@ iframe {
 }
 
 .container-login100 {
-  background-image: url(../images/group.png);
+  background-image: url("../images/group.e70e8d686fc2.png");
   width: 100%;  
   min-height: 100vh;
   display: -webkit-box;
