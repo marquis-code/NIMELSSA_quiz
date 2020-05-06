@@ -32,7 +32,8 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form  action="{% url 'login' %}" onsubmit=" return signUpValidationCheck();" autocomplete="on">
+				<form method="POST" action="{% url 'signup' %}" onsubmit=" return signUpValidationCheck();" autocomplete="on">
+					{% csrf_token  %}
 					<span class="login100-form-logo">
 						<img alt="NIMELSSA logo" class="login100-form-logo" src="{% static 'sign-In/images/nimelssa.png' %}" height="70px" width="70px" style="border-radius: 8px;">
 						<!-- <i class="zmdi zmdi-landscape"></i> -->
@@ -56,7 +57,7 @@
                         <span class="btn-show-pass">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
-					  <input class="input100" id="password-signup" type="password" name="pass"  required="required" placeholder="Password">
+					  <input class="input100" id="password-signup" type="password" name="pass1"  required="required" placeholder="Password">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
@@ -64,9 +65,14 @@
 						<span class="btn-show-pass">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
-                        <input class="input100" id="password-signup_confirm" type="password" name="pass"  required="required" placeholder="Confirm Password">
+                        <input class="input100" id="password-signup_confirm" type="password" name="pass2"  required="required" placeholder="Confirm Password">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
+					{%if error %}
+					<p style ='color:red'>{{error}}</p>
+					<hr>
+					{%endif%}
+					<br />
 					<div class="inputDiv"><b>Hover to view password Instruction.</b>
 						<ul class="input-requirement">
 						  <li>At least 8 characters long(and less than 100 characters)</li>

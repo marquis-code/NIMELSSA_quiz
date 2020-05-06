@@ -1,14 +1,13 @@
 /* Sign up validation */
 function signUpValidationCheck(){
     let clientSignUpPassword = document.getElementById("password-signup").value;
-    let clientSignUpConfirmatoryPassword = document.getElementById("password-signup_confirm").value;
-    let pattern = /[^A-Za-z0-9]/;
-    let clientSignUpMatric = document.getElementById('usersignnup-matric').value;
-    if((pattern.test(clientSignUpPassword) === true) && (clientSignUpMatric.length == '9') && (clientSignUpPassword === clientSignUpConfirmatoryPassword)){
-         alert('Sign Up Successful');
+    /* let clientSignUpConfirmatoryPassword = document.getElementById("password-signup_confirm").value; */
+   let pattern = /^((?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*\W).{8,12})$/;
+  /* let clientSignUpMatric = document.getElementById('usersignnup-matric').value; */
+    if((pattern.test(clientSignUpPassword) === true)){
         return true;
     }else{
-        alert('Sign Up Failed');
+        alert('Password Criteria not met!!!');
         return false;
     }
 };

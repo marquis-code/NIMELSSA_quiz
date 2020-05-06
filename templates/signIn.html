@@ -33,7 +33,8 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form action="{% url 'rules' %}"  onsubmit="return signInValidationCheck();" name="signInForm" autocomplete="on">
+				<form method="POST" action="{% url 'login' %}" name="signInForm" autocomplete="on">
+					{% csrf_token %}
 					<span class="login100-form-title p-b-48">
 						<img alt="NIMELSSA logo"src="{% static 'sign-In/images/nimelssa.png' %}" height="70px" width="70px" style="border-radius: 8px;">
 						<!-- <i  class="zmdi zmdi-font";"></i> -->
@@ -57,6 +58,12 @@
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 					
+					{%if error %}
+					<p style ='color:red'>{{error}}</p>
+					<hr>
+					{%endif%}
+					<br />
+
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
