@@ -13,7 +13,7 @@ def SignupViews (request):
                 except User.DoesNotExist:
                     user=User.objects.create_user(request.POST['matric'],password=request.POST['pass1'])
                     auth.login(request,user)
-                    return redirect('home')
+                    return redirect('login')
             else:
                 return render(request,'signUp.html',{"error":"Yo!! ensure that password match"})
         else:
@@ -26,7 +26,7 @@ def LoginViews (request):
         user=auth.authenticate(username=request.POST['matric'],password=request.POST['pass'])
         if user is not None:
             auth.login(request,user)
-            return redirect('home')
+            return redirect('rules')
         else:
             return render (request,'signIn.html',{'error':'Incorrect Password or Matric'})
     else:
